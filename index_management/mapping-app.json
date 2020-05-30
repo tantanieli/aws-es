@@ -1,0 +1,28 @@
+{
+    "index_patterns": "app-*",
+    "mappings": {
+      "_doc": {
+      "dynamic": "false",
+      "numeric_detection": true,
+      "date_detection": true,
+      "properties": {
+        "messageType": {
+          "type": "keyword",
+          "fields": {
+            "fulltext": {
+              "type": "text"
+            }
+          }
+        },
+        "severity": {
+          "type": "keyword",
+          "fields": {
+            "fulltext": {
+              "type": "text"
+            }
+          }
+        }
+      }
+      }
+    }
+  }

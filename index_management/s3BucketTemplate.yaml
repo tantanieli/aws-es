@@ -1,0 +1,23 @@
+AWSTemplateFormatVersion: 2010-09-09
+
+# The name conventions for AWS S3 buckets are stated in:
+# http://confluence.epnet.com/display/entarch/AWS+Naming+Conventions#AWSNamingConventions-S3Buckets
+Description: >
+  EBSCO format S3 bucket creation
+
+Parameters:
+
+  BucketName:
+    Type: String
+    Description: Name of the bucket
+
+Resources:
+  S3Bucket:
+    Type: "AWS::S3::Bucket"
+    Properties:
+      BucketName: !Ref BucketName
+
+Outputs:
+  S3Bucket:
+    Description: Bucket name
+    Value: !Ref S3Bucket

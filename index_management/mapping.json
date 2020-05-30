@@ -1,0 +1,20 @@
+{
+  "index_patterns": "default-*",
+  "mappings": {
+    "_doc": {
+      "dynamic": "false",
+      "numeric_detection": false,
+      "date_detection": false,
+      "properties": {
+        "pipeline": {
+          "type": "keyword",
+          "fields": {
+            "fulltext": {
+              "type": "text"
+            }
+          }
+        }
+      }
+    }
+  }
+}

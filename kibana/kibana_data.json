@@ -1,0 +1,22 @@
+[
+  {
+    "_id": "53097bf0-53e8-11ea-82a1-3fe625168034",
+    "_type": "visualization",
+    "_source": {
+      "title": "fluentd - errors",
+      "visState": "{\"title\":\"fluentd - errors\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(index=fluentd*, q=\\\"log:*error*\\\")\",\"interval\":\"auto\"},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    },
+    "_migrationVersion": {
+      "visualization": "6.7.2"
+    }
+  }
+]
